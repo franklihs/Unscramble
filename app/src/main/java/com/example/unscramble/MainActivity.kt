@@ -27,17 +27,17 @@ import com.example.unscramble.ui.GameScreen
 import com.example.unscramble.ui.theme.UnscrambleTheme
 
 class MainActivity : ComponentActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        enableEdgeToEdge()
-        super.onCreate(savedInstanceState)
-        setContent {
-            UnscrambleTheme {
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                ) {
-                    GameScreen()
-                }
-            }
+  override fun onCreate(savedInstanceState: Bundle?) {
+    enableEdgeToEdge()
+    super.onCreate(savedInstanceState)
+    setContent {
+      UnscrambleTheme {
+        Surface(
+          modifier = Modifier.fillMaxSize(),
+        ) {
+          GameScreen()
         }
+      }
     }
+  }
 }
